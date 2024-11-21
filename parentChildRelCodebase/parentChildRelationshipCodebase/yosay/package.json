@@ -1,0 +1,43 @@
+{
+	"name": "yosay",
+	"version": "3.0.0",
+	"description": "Tell Yeoman what to say",
+	"license": "BSD-2-Clause",
+	"repository": "yeoman/yosay",
+	"type": "module",
+	"bin": "./cli.js",
+	"exports": "./index.js",
+	"engines": {
+		"node": ">=18"
+	},
+	"scripts": {
+		"test": "xo && FORCE_COLOR=1 mocha",
+		"manual-test": "node test/manual-test.js && node cli.js"
+	},
+	"files": [
+		"index.js",
+		"cli.js"
+	],
+	"keywords": [
+		"cli-app",
+		"cli",
+		"yeoman",
+		"yo",
+		"cowsay",
+		"say",
+		"box",
+		"message",
+		"ansi"
+	],
+	"dependencies": {
+		"readable-stream":"3.6.0",
+		"clone":"1.0.4",
+		"wcwidth":"1.0.1",
+		"color-string":"1.9.1",
+		"color-name":"1.1.4"
+	},
+	"devDependencies": {
+		"mocha": "^10.2.0",
+		"xo": "^0.56.0"
+	}
+}
